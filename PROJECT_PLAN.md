@@ -49,3 +49,8 @@
 - Password: `Admin@2026!`
 
 > Change credentials and JWT secret before production deployment.
+
+
+## Repository naming
+- Recommended repo name: `Digital_East`.
+- GitHub Pages entry point is now root `index.html`.
