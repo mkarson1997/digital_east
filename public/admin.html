@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital East Dashboard</title>
+    <link rel="stylesheet" href="/css/admin.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section id="loginView" class="card">
+        <h1>Dashboard Login</h1>
+        <p>Default: admin / Admin@2026!</p>
+        <form id="loginForm">
+          <input name="username" placeholder="Username" required />
+          <input name="password" type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+          <p id="loginResult"></p>
+        </form>
+      </section>
+
+      <section id="appView" class="hidden">
+        <header class="top">
+          <h1>Digital East Admin Panel</h1>
+          <button id="logoutBtn">Logout</button>
+        </header>
+
+        <div class="grid">
+          <article class="card">
+            <h2>Leads</h2>
+            <button data-load="leads">Refresh Leads</button>
+            <div id="leadsList"></div>
+          </article>
+
+          <article class="card">
+            <h2>Add Project</h2>
+            <form id="projectForm">
+              <input name="title" placeholder="Title" required />
+              <input name="category" placeholder="Category" />
+              <input name="image_url" placeholder="Image URL" />
+              <input name="source" placeholder="Source" />
+              <textarea name="description" placeholder="Description"></textarea>
+              <button type="submit">Add</button>
+            </form>
+            <div id="projectsList"></div>
+          </article>
+
+          <article class="card">
+            <h2>Add Team Member</h2>
+            <form id="teamForm">
+              <input name="name" placeholder="Name" required />
+              <input name="role" placeholder="Role" required />
+              <input name="image_url" placeholder="Image URL" />
+              <textarea name="bio" placeholder="Bio"></textarea>
+              <input name="sort_order" type="number" value="0" />
+              <button type="submit">Add</button>
+            </form>
+            <div id="teamList"></div>
+          </article>
+
+          <article class="card">
+            <h2>Add Blog Post</h2>
+            <form id="postForm">
+              <select name="language">
+                <option value="ar">ar</option>
+                <option value="en">en</option>
+                <option value="tr">tr</option>
+              </select>
+              <input name="slug" placeholder="slug" required />
+              <input name="title" placeholder="Title" required />
+              <input name="summary" placeholder="Summary" required />
+              <textarea name="content" placeholder="Content" required></textarea>
+              <button type="submit">Add</button>
+            </form>
+            <div id="postsList"></div>
+          </article>
+
+          <article class="card full">
+            <h2>Settings</h2>
+            <form id="settingsForm">
+              <input name="company_name" placeholder="Company Name" />
+              <input name="email" placeholder="Email" />
+              <input name="phone" placeholder="Phone" />
+              <input name="location" placeholder="Location" />
+              <input name="hero_title_ar" placeholder="Hero AR" />
+              <input name="hero_title_en" placeholder="Hero EN" />
+              <input name="hero_title_tr" placeholder="Hero TR" />
+              <button type="submit">Save Settings</button>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="/js/admin.js"></script>
+  </body>
+</html>
