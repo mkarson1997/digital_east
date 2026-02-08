@@ -132,6 +132,8 @@ async function init() {
     content = fallbackContent;
   }
 
+  const res = await fetch('/api/public/content');
+  content = await res.json();
   document.getElementById('langSwitcher').value = currentLang;
   renderServices();
   renderProjects();
@@ -166,5 +168,13 @@ window.addEventListener('DOMContentLoaded', () => {
     } catch (_e) {
       document.getElementById('leadResult').textContent = '⚠️ Live API is unavailable in static preview mode.';
     }
+    const res = await fetch('/api/public/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    const result = await res.json();
+    document.getElementById('leadResult').textContent = result.success ? '✅ Sent successfully' : `❌ ${result.error}`;
+    if (result.success) e.target.reset();
   });
 });

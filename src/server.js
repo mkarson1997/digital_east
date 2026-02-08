@@ -252,6 +252,7 @@ app.post('/api/admin/login', (req, res) => {
     secure: process.env.NODE_ENV === 'production',
     maxAge: 10 * 60 * 60 * 1000
   });
+  res.cookie('auth_token', token, { httpOnly: true, sameSite: 'lax', secure: false, maxAge: 10 * 60 * 60 * 1000 });
   return res.json({ success: true });
 });
 
@@ -347,6 +348,7 @@ app.get('/admin', (_req, res) => {
 
 app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, '..', 'index.html'));
+  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {

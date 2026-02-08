@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital East | Marketing & Advertising Solutions</title>
+    <meta name="description" content="Digital East multilingual agency website with modern identity and lead capture." />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <img src="/assets/logo.svg" alt="Digital East" class="logo" />
+        </div>
+        <nav>
+          <a href="#services" data-i18n="navServices">الخدمات</a>
+          <a href="#portfolio" data-i18n="navPortfolio">الأعمال</a>
+          <a href="#team" data-i18n="navTeam">الفريق</a>
+          <a href="#blog" data-i18n="navBlog">المدونة</a>
+          <a href="#contact" data-i18n="navContact">تواصل</a>
+          <a href="/admin" class="admin-link">Dashboard</a>
+        </nav>
+        <select id="langSwitcher" aria-label="Language switcher">
+          <option value="ar">العربية</option>
+          <option value="en">English</option>
+          <option value="tr">Türkçe</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="tagline" data-i18n="tagline">Digital East</p>
+          <h1 id="heroTitle"></h1>
+          <p id="heroSubtitle"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="ctaStart">ابدأ مشروعك</a>
+            <a class="btn btn-secondary" href="#portfolio" data-i18n="ctaWork">شاهد أعمالنا</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" id="services">
+        <h2 data-i18n="servicesTitle">الخدمات</h2>
+        <div class="grid cards" id="servicesGrid"></div>
+      </section>
+
+      <section class="container section" id="portfolio">
+        <h2 data-i18n="portfolioTitle">البورتفوليو</h2>
+        <p data-i18n="portfolioDesc">دمج أعمال الموقعين القديمين بشكل احترافي.</p>
+        <div class="grid projects" id="projectsGrid"></div>
+      </section>
+
+      <section class="container section" id="team">
+        <h2 data-i18n="teamTitle">الفريق</h2>
+        <div class="grid team" id="teamGrid"></div>
+      </section>
+
+      <section class="container section" id="blog">
+        <h2 data-i18n="blogTitle">المدونة</h2>
+        <div class="grid blog" id="postsGrid"></div>
+      </section>
+
+      <section class="container section" id="contact">
+        <h2 data-i18n="leadTitle">اطلب خدمة</h2>
+        <p data-i18n="leadDesc">أرسل طلبك وسيتم استلامه على الإيميل وتخزينه داخل اللوحة.</p>
+        <form id="leadForm" class="lead-form">
+          <input name="name" required placeholder="الاسم الكامل" />
+          <input name="email" type="email" required placeholder="البريد الإلكتروني" />
+          <input name="phone" placeholder="رقم الهاتف / واتساب" />
+          <input name="company" placeholder="اسم الشركة" />
+          <select name="service">
+            <option value="Brand Strategy">Brand Strategy</option>
+            <option value="Performance Ads">Performance Ads</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Content Creation">Content Creation</option>
+          </select>
+          <select name="budget">
+            <option value="1000-3000">$1k-$3k</option>
+            <option value="3000-7000">$3k-$7k</option>
+            <option value="7000+">$7k+</option>
+          </select>
+          <textarea name="message" rows="5" required placeholder="اكتب تفاصيل مشروعك"></textarea>
+          <button class="btn btn-primary" type="submit" data-i18n="send">إرسال الطلب</button>
+          <p id="leadResult"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Digital East</h3>
+          <p>Marketing & Advertising Solutions</p>
+        </div>
+        <div>
+          <h4 data-i18n="contactInfo">معلومات التواصل</h4>
+          <p>info@digitaleast.agency</p>
+          <p>+90 541 392 94 36</p>
+          <p data-i18n="location">تركيا - قونيا</p>
+        </div>
+        <div>
+          <h4 data-i18n="footerNote">جاهزين لبناء موقعك أو حملتك القادمة؟</h4>
+          <a class="btn btn-secondary" href="#contact" data-i18n="ctaStart">ابدأ مشروعك</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

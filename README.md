@@ -16,6 +16,23 @@ A multilingual agency website + admin dashboard starter for **Digital East**.
 - `digitaleast.db` → SQLite DB file (created at runtime).
 
 ## 3) Local run (development)
+# Digital East Web Platform
+
+A production-ready starter for a multilingual agency website with an admin dashboard.
+
+## Stack
+- Node.js + Express
+- SQLite (`better-sqlite3`)
+- Vanilla HTML/CSS/JS frontend
+
+## Features
+- Arabic / English / Turkish public site.
+- Modern responsive UI.
+- Lead capture form.
+- Secure dashboard login.
+- Manage Projects / Team / Blog / Settings.
+
+## Run
 ```bash
 npm install
 npm start
@@ -74,3 +91,13 @@ git remote set-url origin <NEW_REPO_URL>
 - SSL: free (Let's Encrypt).
 - DNS/CDN: free Cloudflare plan is enough initially.
 - Business mail (optional): 1$–6$/mailbox.
+
+Then open:
+- Public site: `http://localhost:3000`
+- Admin panel: `http://localhost:3000/admin`
+
+## Default admin
+- user: `admin`
+- pass: `Admin@2026!`
+
+Change these and set `JWT_SECRET` before production.
