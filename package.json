@@ -1,0 +1,20 @@
+{
+  "name": "digitaleast-platform",
+  "version": "1.0.0",
+  "description": "Digital East multilingual website with admin dashboard",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "check": "node --check src/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
