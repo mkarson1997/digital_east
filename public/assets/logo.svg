@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <rect width="320" height="80" rx="10" fill="#0B1429"/>
+  <path d="M28 16h22v22H28z" fill="#F25C2B"/>
+  <path d="M54 42h22v22H54z" fill="#F25C2B"/>
+  <text x="90" y="48" font-size="30" fill="#EAF0FF" font-family="Arial, sans-serif" font-weight="700">Digital</text>
+  <text x="200" y="48" font-size="30" fill="#F25C2B" font-family="Arial, sans-serif" font-weight="700">east</text>
+</svg>
