@@ -682,7 +682,7 @@ textarea{min-height:150px; resize:vertical}
 
 /* ── Blog Page – فخمة وجذابة ── */
 .hero-blog {
-  background: linear-gradient(rgba(7,8,20,0.85), rgba(7,8,20,0.65)), url('/assets/images/blog/blog-hero-bg.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(7,8,20,0.85), rgba(7,8,20,0.65)), url('/digital_east/assets/images/blog-hero-bg.avif') center/cover no-repeat;
   padding: 140px 0 100px;
   color: white;
 }
@@ -788,7 +788,7 @@ textarea{min-height:150px; resize:vertical}
   position: relative;
   min-height: 70vh;
   background: linear-gradient(rgba(7,8,20,0.82), rgba(7,8,20,0.72)),
-              url('/assets/images/blog-hero-bg.avif') center/cover no-repeat fixed;
+              url('/digital_east/assets/images/blog-hero-bg.avif') center/cover no-repeat fixed;
   color: white;
   padding: 160px 0 120px;
   overflow: hidden;
@@ -861,7 +861,7 @@ textarea{min-height:150px; resize:vertical}
 /* ── Contact Page – فخمة جدًا ── */
 .hero-contact {
   background: linear-gradient(rgba(7,8,20,0.85), rgba(7,8,20,0.75)),
-              url('/assets/images/content-plan-featured.avif') center/cover no-repeat;
+              url('/digital_east/assets/images/content-plan-featured.avif') center/cover no-repeat;
   padding: 140px 0 100px;
   color: white;
 }
@@ -967,7 +967,7 @@ textarea{min-height:150px; resize:vertical}
 /* ── Main Page – فخمة جدًا ── */
 .hero-main {
   background: linear-gradient(rgba(7,8,20,0.88), rgba(7,8,20,0.75)),
-              url('/assets/images/hero-main.avif') center/cover no-repeat fixed;
+              url('/digital_east/assets/images/hero-main.avif') center/cover no-repeat fixed;
   padding: 160px 0 120px;
   color: white;
   position: relative;
@@ -1016,7 +1016,7 @@ textarea{min-height:150px; resize:vertical}
   position: relative;
   padding: 140px 0 100px;
   background: linear-gradient(rgba(7,8,20,0.88), rgba(7,8,20,0.75)),
-              url('/assets/images/blog-hero-bg.avif') center/cover no-repeat fixed;
+              url('/digital_east/assets/images/blog-hero-bg.avif') center/cover no-repeat fixed;
   color: white;
   overflow: hidden;
 }
@@ -1287,7 +1287,7 @@ textarea{min-height:150px; resize:vertical}
   position: relative;
   padding: 160px 0 120px;
   background: linear-gradient(rgba(7,8,20,0.88), rgba(7,8,20,0.75)),
-              url('/assets/images/hero-main.avif') center/cover no-repeat fixed;
+              url('/digital_east/assets/images/hero-main.avif') center/cover no-repeat fixed;
   color: white;
   overflow: hidden;
 }
@@ -1311,7 +1311,7 @@ textarea{min-height:150px; resize:vertical}
 /* ── Portfolio Page – فخمة جدًا ── */
 .hero-portfolio {
   background: linear-gradient(rgba(7,8,20,0.85), rgba(7,8,20,0.75)),
-              url('/assets/images/portfolio-hero-bg.avif') center/cover no-repeat;
+              url('/digital_east/assets/images/portfolio-hero-bg.avif') center/cover no-repeat;
   padding: 140px 0 100px;
   color: white;
 }
@@ -1391,7 +1391,7 @@ textarea{min-height:150px; resize:vertical}
 /* ── Privacy Page – احترافية وفخمة ── */
 .hero-privacy {
   background: linear-gradient(rgba(7,8,20,0.88), rgba(7,8,20,0.75)),
-              url('/assets/images/privacy-hero-bg.avif') center/cover no-repeat;
+              url('/digital_east/assets/images/privacy-hero-bg.avif') center/cover no-repeat;
   padding: 140px 0 100px;
   color: white;
 }
@@ -1497,7 +1497,7 @@ textarea{min-height:150px; resize:vertical}
 /* ── Services Page – فخمة جدًا ── */
 .hero-services {
   background: linear-gradient(rgba(7,8,20,0.88), rgba(7,8,20,0.75)),
-              url('/assets/images/services-hero-bg.avif') center/cover no-repeat;
+              url('/digital_east/assets/images/services-hero-bg.avif') center/cover no-repeat;
   padding: 140px 0 100px;
   color: white;
 }
@@ -1643,7 +1643,7 @@ textarea{min-height:150px; resize:vertical}
 /* ── Terms Page – احترافية وفخمة ── */
 .hero-terms {
   background: linear-gradient(rgba(7,8,20,0.88), rgba(7,8,20,0.75)),
-              url('/assets/images/terms-hero-bg.avif') center/cover no-repeat;
+              url('/digital_east/assets/images/terms-hero-bg.avif') center/cover no-repeat;
   padding: 140px 0 100px;
   color: white;
 }
