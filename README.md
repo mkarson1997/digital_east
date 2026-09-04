@@ -1,5 +1,7 @@
 # Digital East
 
+[![Quality](https://github.com/mkarson1997/digital_east/actions/workflows/quality.yml/badge.svg)](https://github.com/mkarson1997/digital_east/actions/workflows/quality.yml)
+
 A responsive Arabic RTL marketing-agency website built as a multi-page static web experience and deployed with GitHub Pages.
 
 **Live demo:** https://mkarson1997.github.io/Digital_East/
@@ -24,6 +26,7 @@ The project focuses on building a polished Arabic-first interface while keeping 
 - SEO-oriented page titles and metadata
 - Reusable visual system and shared assets
 - GitHub Pages deployment
+- Automated local-reference validation in GitHub Actions
 
 ## Site structure
 
@@ -58,16 +61,33 @@ Although this is a static site, the repository demonstrates several production-f
 - responsive behavior across mobile and desktop layouts,
 - search-friendly metadata,
 - clear information architecture for a service business,
-- zero-server deployment through GitHub Pages.
+- zero-server deployment through GitHub Pages,
+- validating internal assets and links automatically on every push/PR.
 
 ## Tech stack
 
 - HTML5
 - CSS3
 - JavaScript
+- Python 3.12 for repository validation
 - RTL / Arabic web design
 - Responsive design
+- GitHub Actions
 - GitHub Pages
+
+## Quality gate
+
+`.github/workflows/quality.yml` runs `scripts/validate_static.py` on pushes and pull requests to `main`.
+
+The validator scans the repository's HTML files, parses local `href`/`src` references and fails when a path escapes the repository or points to a missing local file.
+
+Run the same check locally:
+
+```bash
+python scripts/validate_static.py
+```
+
+This gives the static site a repeatable engineering gate rather than relying only on manual clicking after changes.
 
 ## Run locally
 
@@ -87,18 +107,28 @@ http://localhost:8000/
 
 For the deployed version use the live GitHub Pages URL above.
 
+## Open-source workflow
+
+The repository includes:
+
+- `SECURITY.md` for vulnerability reporting,
+- `CONTRIBUTING.md` for contribution expectations,
+- a pull-request checklist,
+- GitHub Actions quality validation,
+- tracked issues for the next accessibility/performance improvements.
+
 ## Roadmap
 
-- Add automated HTML/link validation
-- Improve accessibility auditing and keyboard navigation
-- Add a build-time reusable component pipeline for shared page fragments
+- Add automated accessibility auditing for representative pages
+- Improve keyboard navigation and focus behavior
 - Add image optimization and performance budgets
-- Add structured data where appropriate
 - Add automated Lighthouse checks
+- Add structured data where appropriate
+- Evolve shared page fragments toward a maintainable build-time component pipeline if the project grows
 
 ## Portfolio note
 
-This project is part of my public software portfolio and demonstrates Arabic RTL front-end implementation, multi-page information architecture and static deployment.
+This project is part of my public software portfolio and demonstrates Arabic RTL front-end implementation, multi-page information architecture, static deployment and automated quality checks.
 
 ---
 
